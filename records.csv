@@ -1,7 +1,6 @@
-name,latitude,longitude,temperature,precipitation,date
-"San Francisco",37.7749,-122.4194,57,0.0,"2024-01-01"
-"San Francisco",37.7749,-122.4194,58,0.1,"2024-01-02"
-"Los Angeles",34.0522,-118.2437,76,0.0,"2024-01-01"
-"Los Angeles",34.0522,-118.2437,75,0.0,"2024-01-02"
-"New York",40.7128,-74.0060,30,0.2,"2024-01-01"
-"New York",40.7128,-74.0060,28,0.3,"2024-01-02"
+country,temperature,date
+"Canada", -5, "2024-01-01"
+"Mexico", 25, "2024-01-01"
+"France", 15, "2024-01-01"
+"Kenya", 27, "2024-01-01"
+"Australia", 30, "2024-01-01"
