@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Country Temperature Rank</title>
+</head>
+<body>
+    <h1>Country Temperature Rankings</h1>
+    <ol>
+        {% for country, temperature in ranked_countries %}
+            <li>{{ country }}: {{ temperature }}°C</li>
+        {% endfor %}
+    </ol>
+    <a href="/">Back to Home</a>
+</body>
+</html>
