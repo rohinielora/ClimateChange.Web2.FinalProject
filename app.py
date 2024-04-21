@@ -4,6 +4,9 @@ import sqlite3
 from climate_manager.profiles.controller import profile_view
 from climate_manager.weather_history.controller import weather_history_view
 
+from climate_manager.weather_history.action import rank_countries_by_temperature
+from flask import Flask, render_template
+
 app = Flask(__name__)
 
 def get_db():
