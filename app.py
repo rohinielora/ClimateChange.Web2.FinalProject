@@ -31,3 +31,11 @@ def weather_history():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+""" recently added """
+
+@app.route('/temperature_rank')
+def temperature_rank():
+    ranked_countries = rank_countries_by_temperature()
+    return render_template("temperature_rank.html", ranked_countries=ranked_countries)
+
