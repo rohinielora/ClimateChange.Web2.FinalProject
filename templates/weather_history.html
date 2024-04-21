@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather History</title>
+</head>
+<body>
+    <h1>Weather History for {{ location.name }}</h1>
+    <p>Latitude: {{ location.latitude }}</p>
+    <p>Longitude: {{ location.longitude }}</p>
+    <h2>Record Details</h2>
+    <ul>
+        <li>Date: {{ record.date }}</li>
+        <li>Temperature: {{ record.temperature }}°F</li>
+        <li>Precipitation: {{ record.precipitation }} inches</li>
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
