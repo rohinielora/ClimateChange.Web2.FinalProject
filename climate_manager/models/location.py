@@ -3,7 +3,7 @@ class Location:
         self.name = name
         self.latitude = latitude
         self.longitude = longitude
-        self.history = []
-    
-    def add_history(self, history):
-        self.history.append(history)
+        self.weather_history = []
+
+    def add_weather_record(self, record):
+        self.weather_history.append(record)
