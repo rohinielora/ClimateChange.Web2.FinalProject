@@ -1,6 +1,7 @@
 country,temperature,date
-"Canada", -5, "2024-01-01"
-"Mexico", 25, "2024-01-01"
-"France", 15, "2024-01-01"
-"Kenya", 27, "2024-01-01"
-"Australia", 30, "2024-01-01"
+"Canada", -5, 2024-01-01
+"Mexico", 25, 2024-01-01
+"France", 15, 2024-01-01
+"Kenya", 27, 2024-01-01
+"Australia", 30, 2024-01-01
+"Canada", 35, 2023-01-01

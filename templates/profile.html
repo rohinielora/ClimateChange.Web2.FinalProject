@@ -4,10 +4,14 @@
     <title>Location Profile</title>
 </head>
 <body>
-    <h1>Location Profile</h1>
-    <p>Name: {{ location.name }}</p>
-    <p>Latitude: {{ location.latitude }}</p>
-    <p>Longitude: {{ location.longitude }}</p>
+    <h1>All Locations</h1>
+    {% for location in locations %}
+        <p>
+            <a href="/weather_history/{{ location.name }}">{{ location.name }}</a>
+            Latitude: {{ location.latitude }}
+            Longitude: {{ location.longitude }}
+        </p>
+    {% endfor %}
     <a href="/">Back to Home</a>
 </body>
 </html>

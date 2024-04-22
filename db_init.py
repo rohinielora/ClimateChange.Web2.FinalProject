@@ -4,6 +4,9 @@ import csv
 def create_tables(cursor):
     # Assuming you already have other table creation statements
     cursor.execute('''
+        DROP TABLE IF EXISTS country_temperature
+    ''')
+    cursor.execute('''
         CREATE TABLE IF NOT EXISTS country_temperature (
             country TEXT,
             temperature REAL,
@@ -16,7 +19,7 @@ def insert_temperature_data(cursor, temperature_data):
         cursor.execute('''
             INSERT INTO country_temperature (country, temperature, date) 
             VALUES (?, ?, ?)
-        ''', (entry['country'], entry['temperature'], entry['date']))
+        ''', (entry['country'], entry['temperature'], entry['date'].strip()))
 
 def load_temperature_from_csv(filename):
     temperature_data = []
@@ -40,6 +43,13 @@ def main():
 
     # Commit changes and close the database connection
     conn.commit()
+    
+    query = cursor.execute("SELECT * FROM country_temperature")
+    rows = query.fetchall()
+    print(rows)
+    print(rows[1][0])
+    print(rows[1][1])
+    print(rows[1][2])
     conn.close()
 
 if __name__ == "__main__":
